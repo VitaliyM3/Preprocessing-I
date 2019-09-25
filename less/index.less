@@ -53,27 +53,79 @@ table {
     box-sizing: border-box;
 }
 
+@stdfont: 1.6rem;
+
 html, body {
 	height: 100%;
+	font-size: 62.5%;
+	width: 1000px;
+	border: 2px solid green;
+	margin: auto;
 }
 
 header {
-	width:90%;
+	width:auto;
 	display:flex;
 	flex-direction: row;
-
+	font-size: @stdfont;
+	justify-content: space-between;
+	
 	h1 {
-
+		font-size: 4.8rem;
+		text-align: center;
+		padding: 10px;
+		margin: auto;
 	}
 
 	nav {
+		border: 2px solid blue;
 		flex-wrap: nowrap;
+		font-size: 2.4rem;
+		justify-content: space-between;
+		align-self: center;
+		padding: 10px;
 
 		a {
 			text-decoration:none;
-			color:red;
-
-
+			color:black;
+			margin: 20px;
+	
 		}
 	}
+}
+
+.middle-content {
+font-size:2.0rem;
+border: 2px solid red;
+display:flex;
+margin:auto;
+flex-wrap: wrap;
+justify-content: space-between;
+justify-content: space-around;
+justify-content: center;
+
+	h2 {
+		font-size: 2.4rem;
+		text-align: center;
+		
+	}
+	.content1 {
+		
+		flex-direction: row;
+		width: 450px;
+		height: 300px;
+		border: 2px solid orange;
+		margin: 10px;
+		padding:5px;
+		line-height: 1.6em;
+		margin: 20px;
+
+	}
+	.vitaliypic {
+		display: block;
+  		margin-left: auto;
+  		margin-right: auto;
+	}
+		
+	
 }
