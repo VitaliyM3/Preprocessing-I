@@ -54,6 +54,18 @@ table {
 }
 
 @stdfont: 1.6rem;
+@contactsize: 2.8rem;
+
+.title-bold-sylte {
+	font-weight: bold;
+	font-style: italic;
+	font-size: 2.8rem;
+}
+
+.liststyle {
+	font-size: 2.2rem;
+	font-family: Utopia;
+}
 
 html, body {
 	height: 100%;
@@ -78,7 +90,6 @@ header {
 	}
 
 	nav {
-		border: 2px solid blue;
 		flex-wrap: nowrap;
 		font-size: 2.4rem;
 		justify-content: space-between;
@@ -96,7 +107,6 @@ header {
 
 .middle-content {
 font-size:2.0rem;
-border: 2px solid red;
 display:flex;
 margin:auto;
 flex-wrap: wrap;
@@ -108,14 +118,13 @@ justify-content: center;
 		font-size: 2.4rem;
 		text-align: center;
 		
-		
 	}
+
 	.content1 {
 		
 		flex-direction: row;
 		width: 450px;
 		height: 300px;
-		border: 2px solid orange;
 		margin: 10px;
 		padding:5px;
 		line-height: 1.6em;
@@ -127,36 +136,73 @@ justify-content: center;
   		margin-left: auto;
 		margin-right: auto;
 		border-radius: 20px;
-		  
 	}
+
+		
 	
 	.content2 {
 			display:flex;
 			flex-direction: row;
-			border: 2px solid pink;
-			width: 900px;
+			width: 940px;
+			background-color: beige;
+			border-top: 2px solid black;
+			padding-top:20px;
 
 
 		.content-info {
 			flex-direction: column;
-			border: 2px solid blue;
 			width: 400px;
 			height: 200px;
 			line-height: 1.6em;
+			padding:10px;
+
+			.list {
+				margin-left: 25px;
+				.liststyle();
+			}
 			
 			h2 {
 				text-align: left;
+				.title-bold-sylte();
 			}
 	
 		}
 
 		.contact-info {
-			border: 2px solid yellow;
 			width: 450px;
 			height: 400px;
+			margin: auto;
+
+			.contact {
+				text-align: center;
+				margin-top: 50px;
+				line-height: 2.0em;
+
+				.title {
+					font-size: @contactsize;
+					padding: 10px;
+					margin-bottom: 10px;
+					
+					a:hover {
+						background: lightgrey;
+					}
+
+					a {
+						text-decoration: none;
+						color: black;
+						border:1px solid black;
+						padding:15px;
+						border-radius: 10px;
+						background-color: azure;
+					}
+				}
+
+
+				
+			}
+
 		}
 		
-
 	}
 
 	
