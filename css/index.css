@@ -147,6 +147,12 @@ body {
   margin: auto;
   font-family: Cambria, "Hoefler Text", Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif;
 }
+@media (max-width: 500px) {
+  html,
+  body {
+    width: 100%;
+  }
+}
 header {
   width: auto;
   display: flex;
@@ -207,6 +213,12 @@ header nav a {
   background-color: beige;
   border-top: 2px solid black;
   padding-top: 20px;
+}
+@media (max-width: 500px) {
+  .middle-content .content2 {
+    width: 500px;
+    flex-direction: column;
+  }
 }
 .middle-content .content2 .content-info {
   flex-direction: column;
